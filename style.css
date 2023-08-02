@@ -1,8 +1,18 @@
 @import url("https://rsms.me/inter/inter.css");
 
 :root {
-    --background-main: #F2F2F2;
-    --background-footer: #DDE3E9;
+    --color-white: #FFFFFF;
+    --color-rebecca-purple: #663399;
+    --color-very-light-pink: #F2F2F2;
+    --color-dark-grey-blue: #2F3676;
+    --color-dark-blue-grey: #191847;
+    --color-pine-green: #071723;
+    --color-light-sky-blue: #DDE3E9;
+    --color-light-blue-grey: #C5CFD6;
+    --color-greyish-brown: #555555;
+    --color-error: #F59393;
+    --color-border-error: #F33232;
+    --color-sucess: #00C57C;
 }
 
 html {
@@ -16,12 +26,12 @@ html {
 }
 
 body {
-    background-color: rebeccapurple;
-    color: #071723;
+    background-color: var(--color-rebecca-purple);
+    color: var(--color-pine-green);
 }
 
 .box {
-    background-color: #f2f2f2;
+    background-color: var(--color-very-light-pink);
     border-radius: 8px;
     box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
     margin: 20px auto;
@@ -38,7 +48,7 @@ header {
 }
 
 header .title {
-    color: #fff;
+    color: var(--color-white);
     font-size: 23px;
     font-weight: 300;
 }
@@ -58,7 +68,7 @@ header .title span {
 }
 
 main {
-    background-color: #F2F2F2;
+    background-color: var(--color-very-light-pink);
     padding: 0 32px;
 }
 
@@ -78,8 +88,8 @@ fieldset {
 }
 
 .counter input {
-    background: #dde3e9;
-    border: 1px solid #2f3676;
+    background: var(--color-light-sky-blue);
+    border: 1px solid var(--color-dark-grey-blue);
     border-radius: 7px;
     font-size: 20px;
     font-weight: bold;
@@ -93,10 +103,10 @@ fieldset {
 }
 
 form textarea {
-    background: #dde3e9;
-    border: 1px solid #2f3676;
+    background: var(--color-light-sky-blue);
+    border: 1px solid var(--color-dark-grey-blue);
     border-radius: 8px;
-    color: #071723;
+    color: var(--color-pine-green);
     height: 140px;
     padding: 16px;
     resize: none;
@@ -106,10 +116,10 @@ form textarea {
 
 button {
     appearance: none;
-    background: #2f3676;
-    border: 2px solid;
+    background: var(--color-dark-grey-blue);
+    border: 2px solid var(--color-dark-grey-blue);
     border-radius: 8px;
-    color: #fff;
+    color: var(--color-white);
     padding: 10px;
     font-size: 18px;
     text-transform: uppercase;
@@ -119,12 +129,22 @@ button {
 
 button:focus,
 button:hover {
-    border: 2px solid #2f3676;
-    background: #191847;
+    border: 2px solid var(--color-dark-grey-blue);
+    background: var(--color-dark-blue-grey);
+}
+
+.button-error {
+    border-radius: 4px;
+    border: 1px solid var(--color-border-error);
+    background: var(--color-error);    
+}
+
+.buttom-desabled {
+    background: var(--color-light-blue-grey);
 }
 
 footer {
-    background-color: #DDE3E9;
+    background-color: var(--color-light-sky-blue);
     padding: 25px 32px;
     display: flex;
     justify-content: flex-end;
