@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pacote de Stickers</title>
+</head>
+<body>
+    <section class="box">
+        <header class="space">
+            <section>
+                <h1 class="title">Formulário <br/>para compra de <br/><span>Pacote de Stickers</span></h1>
+            </section>
+        </header>
+
+        <main>
+            <form action="">
+                <fieldset class="space-md">
+                    <div class="space">
+                        <label class="questioning-text space" for="">Quais stickers: </label>
+                    </div>
+                    <div>
+                        <label for="react">React</label>
+                        <input type="checkbox" name="react" id="react" class="checkbox">
+                    </div>
+                    <div>
+                        <label for="vue">Vue</label>
+                        <input type="checkbox" name="vue" id="vue" class="checkbox">
+                    </div>
+                    <div>
+                        <label for="angular">Angular</label>
+                        <input type="checkbox" name="angular" id="angular" class="checkbox">
+                    </div>
+                </fieldset>
+    
+                <fieldset class="space-md">
+                    <div class="space">
+                        <label class="questioning-text" for="amount">Quantos stickers de cada?</label>
+                    </div>
+                    <div class="counter">
+                        <button type="button" id="subtract">-</button>
+                        <input type="text" name="amount" id="amount" placeholder="0">
+                        <button type="button" id="add">+</button>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="space-md">
+                    <div class="space">
+                        <label class="questioning-text" for="observation">Observação:</label>
+                    </div>
+                    <textarea name="observation" id="observation" cols="30" rows="10" placeholder="Alguma dúvida? Recado?"></textarea>
+                </fieldset>
+            </form>
+        </main>
+    
+        <footer>
+            <button type="submit" id="send">Enviar</button>
+        </footer>
+    </section>
+</body>
+</html>
