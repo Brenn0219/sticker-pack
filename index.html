@@ -9,54 +9,50 @@
 </head>
 <body>
     <section class="box">
-        <header class="space">
-            <section>
-                <h1 class="title">Formulário <br/>para compra de <br/><span>Pacote de Stickers</span></h1>
-            </section>
+        <header>
+            <h1 class="title">Formulário <br/>para compra de <br/><span>Pacote de Stickers</span></h1>
         </header>
 
         <main>
             <form action="">
                 <fieldset class="space-md">
-                    <div class="space">
-                        <label class="questioning-text space" for="">Quais stickers: </label>
-                    </div>
-                    <div>
-                        <label for="react">React</label>
+                    <legend class="questioning-text">Quais stickers: </legend>
+
+                    <div class="check">
                         <input type="checkbox" name="react" id="react" class="checkbox">
+                        <label for="react">React</label>
                     </div>
-                    <div>
-                        <label for="vue">Vue</label>
+                    <div class="check">
                         <input type="checkbox" name="vue" id="vue" class="checkbox">
+                        <label for="vue">Vue</label>
                     </div>
-                    <div>
-                        <label for="angular">Angular</label>
+                    <div class="check">
                         <input type="checkbox" name="angular" id="angular" class="checkbox">
+                        <label for="angular">Angular</label>
                     </div>
                 </fieldset>
     
                 <fieldset class="space-md">
-                    <div class="space">
-                        <label class="questioning-text" for="amount">Quantos stickers de cada?</label>
-                    </div>
+                    <legend class="questioning-text">Quantos stickers de cada?</legend>
+
                     <div class="counter">
-                        <button type="button" id="subtract">-</button>
-                        <input type="text" name="amount" id="amount" placeholder="0">
-                        <button type="button" id="add">+</button>
+                        <button class="button" type="button" id="subtract">-</button>
+                        <input type="text" name="amount" id="amount" class="amount" placeholder="0">
+                        <button class="button" type="button" id="add">+</button>
                     </div>
                 </fieldset>
     
                 <fieldset class="space-md">
-                    <div class="space">
-                        <label class="questioning-text" for="observation">Observação:</label>
-                    </div>
+                    <legend class="questioning-text">Observação:</legend>
+
                     <textarea name="observation" id="observation" cols="30" rows="10" placeholder="Alguma dúvida? Recado?"></textarea>
                 </fieldset>
             </form>
         </main>
     
         <footer>
-            <button type="submit" id="send">Enviar</button>
+            <p class="sucess" id="menssage-sent"></p>
+            <button class="button" type="submit" id="send">Enviar</button>
         </footer>
     </section>
 
