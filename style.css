@@ -28,6 +28,7 @@ html {
 body {
     background-color: var(--color-rebecca-purple);
     color: var(--color-pine-green);
+    padding: 0 20px;
 }
 
 .box {
@@ -36,7 +37,7 @@ body {
     box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
     margin: 20px auto;
     overflow: hidden;
-    width: 550px;
+    max-width: 550px;
 }
 
 header {
@@ -44,6 +45,7 @@ header {
     background-size: cover;
     height: 187px;
     padding: 23px 36px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
@@ -57,10 +59,6 @@ header .title span {
     font-weight: bold;
     font-size: 24px;
     line-height: 1.46;
-}
-
-.space {
-    margin-bottom: 10px;
 }
   
 .space-md {
@@ -79,6 +77,23 @@ fieldset {
 .questioning-text {
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check:nth-child(3) {
+    margin: 10px 0 ;
+}
+
+.check .checkbox {
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-light-sky-blue);
 }
 
 .counter {
@@ -87,7 +102,7 @@ fieldset {
     align-items: center;
 }
 
-.counter input {
+.amount {
     background: var(--color-light-sky-blue);
     border: 1px solid var(--color-dark-grey-blue);
     border-radius: 7px;
@@ -114,9 +129,9 @@ form textarea {
     font-size: 14px;
 }
 
-button {
+.button {
     appearance: none;
-    background: var(--color-dark-grey-blue);
+    background-color: var(--color-dark-grey-blue);
     border: 2px solid var(--color-dark-grey-blue);
     border-radius: 8px;
     color: var(--color-white);
@@ -125,27 +140,40 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     padding: 8px 32px;
+    cursor: pointer;
 }
 
-button:focus,
-button:hover {
+.button:focus,
+.button:hover {
     border: 2px solid var(--color-dark-grey-blue);
     background: var(--color-dark-blue-grey);
 }
 
-.button-error {
-    border-radius: 4px;
+.error {
     border: 1px solid var(--color-border-error);
     background: var(--color-error);    
 }
 
-.buttom-desabled {
+.button-desabled,
+.button-desabled:focus,
+.button-desabled:hover {
+    border: 2px solid var(--color-greyish-brown);
+    color: var(--color-greyish-brown);
     background: var(--color-light-blue-grey);
+    cursor: no-drop;
 }
 
 footer {
     background-color: var(--color-light-sky-blue);
     padding: 25px 32px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.sucess {
+    color: var(--color-sucess);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
